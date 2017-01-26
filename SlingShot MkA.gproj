@@ -1,0 +1,68 @@
+<project>
+ <properties version_code="1" osx_category="5" encryptAssets="0" html5_host="" mouseTouchOrder="0" win_org="GiderosMobile" android_template="1" architecture="1" winrt_package="com.yourdomain.yourapp" mouseToTouch="1" logicalHeight="800" encryptCode="0" osx_bundle="com.yourdomain." packageName="com.lunargamesstudio.donthittheghost" scaleMode="3" ios_bundle="com.yourdomain." osx_domain="giderosmobile.com" windowWidth="0" version="1.0" autorotation="3" winrt_org="GiderosMobile" osx_org="GiderosMobile" iosDevice="0" orientation="0" touchToMouse="1" fps="60" assetsOnly="1" windowHeight="0" retinaDisplay="3" logicalWidth="480" win_domain="giderosmobile.com">
+  <imageScales>
+   <scale suffix="@2" scale="2"/>
+  </imageScales>
+ </properties>
+ <file source="BS2.wav"/>
+ <file source="menu.wav"/>
+ <file source="highscore.wav"/>
+ <file source="ghst.wav"/>
+ <file source="PixelFont.TTF"/>
+ <file source="Boxy-Bold.ttf"/>
+ <file source="dt_healthbar.lua"/>
+ <file source="1.wav"/>
+ <file source="TouchBall.lua"/>
+ <file source="MainBall.lua"/>
+ <file source="config.lua"/>
+ <file source="main.lua"/>
+ <folder name="Scenes">
+  <file source="SplashartScene.lua"/>
+  <file source="TutorialScene.lua"/>
+  <file source="EndScene.lua"/>
+  <file source="StartScene.lua"/>
+  <file source="LevelScene.lua"/>
+ </folder>
+ <folder name="classes">
+  <file source="TextWrap.lua"/>
+  <file source="Sounds.lua"/>
+  <file source="scenemanager.lua"/>
+  <file source="Music.lua"/>
+  <file source="json.lua"/>
+  <file source="gtween.lua"/>
+  <file source="easing.lua"/>
+  <file source="dataSaver.lua"/>
+  <file source="Button.lua"/>
+ </folder>
+ <folder name="images">
+  <file source="logo.png"/>
+  <file source="hand.png"/>
+  <file source="board.png"/>
+  <file source="ratebtn1.png"/>
+  <file source="ghostinvert.png"/>
+  <file source="threeeyes.png"/>
+  <file source="ghost.png"/>
+  <file source="Blue.png"/>
+  <file source="AlienY.png"/>
+  <file source="bg_shroom.png"/>
+  <file source="First.png"/>
+  <file source="Replay.png"/>
+  <file source="touch0.png"/>
+  <file source="bg.jpg"/>
+  <file source="main1.png"/>
+  <file source="Play.png"/>
+ </folder>
+ <dependency from="LevelScene.lua" to="MainBall.lua"/>
+ <dependency from="LevelScene.lua" to="TouchBall.lua"/>
+ <dependency from="LevelScene.lua" to="Sounds.lua"/>
+ <dependency from="LevelScene.lua" to="scenemanager.lua"/>
+ <dependency from="StartScene.lua" to="config.lua"/>
+ <dependency from="TutorialScene.lua" to="easing.lua"/>
+ <dependency from="TutorialScene.lua" to="scenemanager.lua"/>
+ <dependency from="config.lua" to="json.lua"/>
+ <dependency from="config.lua" to="easing.lua"/>
+ <dependency from="config.lua" to="scenemanager.lua"/>
+ <dependency from="config.lua" to="dataSaver.lua"/>
+ <dependency from="main.lua" to="StartScene.lua"/>
+ <dependency from="main.lua" to="dataSaver.lua"/>
+</project>
